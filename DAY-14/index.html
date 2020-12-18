@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DAY-14</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-    
-</body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="banner-container">
+        <div class="banner-txt">Responsive Banner</div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Responsive view (row,column)</div>
+
+    <div class="row">
+      <div class="col-6">
+        <div>col-6</div>
+      </div>
+
+      <div class="col-6">
+        <div>col-6</div>
+      </div>
+
+      <div class="col-1">
+        <div>col-1</div>
+      </div>
+
+      <div class="col-11">
+        <div>col-11</div>
+      </div>
+
+      <div class="col-3">
+        <div>col-3</div>
+      </div>
+
+      <div class="col-9">
+        <div>col-9</div>
+      </div>
+
+      <div class="col-8">
+        <div>col-8</div>
+      </div>
+
+      <div class="col-4">
+        <div>col-4</div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Hide on small screen</div>
+
+    <div class="hide">This div will hide on very small screens.</div>
+
+    <hr class="divider" />
+    <div class="head">Change font-size based on screen-size</div>
+
+    <div class="font-change">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta iure
+      architecto, doloribus debitis maiores doloremque, cumque minima suscipit
+      natus necessitatibus molestias perferendis nisi hic vero officia quos,
+      sint deserunt ea?
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Responsive Image</div>
+
+    <div class="media-holder">
+      <img src="./media/pexels-kate-trifo-3804996.jpg" alt="responsive" />
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Using picture tag</div>
+
+    <picture>
+      <source
+        media="(max-width: 900px)"
+        srcset="./media/pexels-kate-trifo-3804996.jpg"
+      />
+      <img
+        src="./media/pexels-skinny-alien-2318554.jpg"
+        style="max-width: 300px"
+      />
+    </picture>
+
+    <hr class="divider" />
+    <div class="head">Responsive Video</div>
+
+    <div class="media-holder">
+      <video class="video-res" controls>
+        <source src="./media/mov_bbb.mp4" />
+      </video>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Responsive Layout using Bootstrap Framework</div>
+
+    <a href="./bootstrap-demo.html" class="link">go to Bootstrap Page</a>
+
+  </body>
 </html>
