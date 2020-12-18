@@ -1,0 +1,57 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.bg-blue{
+    background-color: rgb(137, 137, 255);
+}
+
+.bg-skin{
+    background-color: rgb(255, 200, 137);
+}
+
+.margin-padding{
+    padding: 20px;
+    border: 2px dashed red;
+    margin: 10px;
+}
+
+.text-white{
+    color: white;
+    font-size: 50px;
+}
+
+.center-align{
+    text-align: center;
+}
+
+.links{
+    background-color: rgb(122, 45, 184);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    display: inline-block;
+}
+
+.links img{
+    height: 100px;
+    width: auto;
+}
+
+.links.active{
+    background-color:goldenrod;
+}
+
+.links:visited{
+    background-color: royalblue;
+}
+
+.links:hover{
+    background-color: rgb(137, 137, 255);
+}

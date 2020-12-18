@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 5px;
+}
+
+.head {
+  font-size: 30px;
+  color: rgb(15, 125, 189);
+}
+
+.divider {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 2px;
+  background-color: gray;
+  border: none;
+}
+
+/* lists */
+
+.u-list-1 {
+  list-style-type: square;
+}
+
+.u-list-2 {
+  list-style-type: circle;
+}
+
+.o-list-1 {
+  list-style-type: lower-alpha;
+}
+
+.o-list-2 {
+  list-style-type: lower-roman;
+}
+
+.list-pos-1 {
+  list-style-position: inside;
+}
+.list-pos-1 li {
+  border: 1px solid black;
+}
+
+.list-pos-2 {
+  list-style-position: outside;
+}
+.list-pos-2 li {
+  border: 1px solid black;
+}
+
+/* tables */
+
+.table-1 {
+  width: 100%;
+}
+
+.table-1,
+.table-1 th,
+.table-1 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.table-1 th {
+  height: 50px;
+}
+
+.table-1 td {
+  text-align: center;
+  height: 50px;
+}
+
+.table-1 td {
+  vertical-align: middle;
+}
+
+/* table 2 */
+
+.table-2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.table-2,
+.table-2 th,
+.table-2 td {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.table-2 tr:nth-child(even) {
+  background-color: rgb(228, 228, 228);
+}
+
+.table-2 th {
+  background-color: hotpink;
+}
+
+/* table3 */
+
+.table-holder {
+  overflow-x: auto;
+  max-width: 600px;
+}
+
+/* display */
+
+.dis-block {
+  display: block;
+  padding: 5px;
+  margin: 10px;
+  background-color: hotpink;
+}
+
+.dis-inline {
+  display: inline;
+  padding: 5px;
+  margin: 10px;
+  background-color: hotpink;
+}
+
+.dis-inline-block {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  height: 100px;
+  background-color: hotpink;
+}
+
+.dis-none {
+  display: none;
+  padding: 5px;
+  margin: 10px;
+  background-color: hotpink;
+}
+
+.vis-hidden {
+  visibility: hidden;
+  padding: 5px;
+  margin: 10px;
+  background-color: hotpink;
+}
+
+/* max-width */
+
+.width {
+  width: 500px;
+  margin: auto;
+  border: 3px solid red;
+}
+
+.max-width {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid red;
+}
+
+/* positions */
+
+.sty-pos {
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  font-size: 25px;
+  background-color: rgb(15, 125, 189);
+  border: 2px solid rgb(131, 0, 102);
+}
+
+.pos-static {
+  position: static;
+}
+
+.pos-sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.pos-fixed {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.pos-relative {
+  position: relative;
+  height: 200px;
+  z-index: -1;
+}
+
+.pos-absolute {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+/* overflow */
+
+.of-sty {
+  background-color: black;
+  color: white;
+}
+
+.overflow-visible {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  overflow: visible;
+}
+
+.overflow-hidden {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.overflow-auto {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  overflow: auto;
+}
+
+.overflow-scroll {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  overflow: scroll;
+}
+
+/* float */
+
+.float-div {
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.float-img {
+  float: right;
+  height: 150px;
+  width: auto;
+  border: 2px solid black;
+}
+
+.float-div div{
+  clear: right;
+}
+
+/* align */
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(230, 187, 0);
+  padding: 10px;
+  text-align: center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

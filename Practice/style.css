@@ -1,0 +1,30 @@
+.divider {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 2px;
+    background-color: rgb(100, 100, 100);
+    border: none;
+  }
+  
+  div{
+      padding: 10px;
+      border: 2px solid black;
+      width: 25%;
+  }
+  
+  span{
+      padding: 10px;
+      float: right;
+      border: 2px solid red;
+  }
+  
+  p{
+      clear: right;
+  }
+  
+  div::after{
+      content: "";
+      display: block;
+      clear: right;
+  }
+  

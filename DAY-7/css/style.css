@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 5px;
+}
+
+.head {
+  font-size: 30px;
+  color: rgb(15, 125, 189);
+}
+
+.divider {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 2px;
+  background-color: gray;
+  border: none;
+}
+
+/* pseudo element */
+
+.ps-elem{
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom:20px;
+}
+
+.ps-elem::first-letter{
+    font-size: 30px;
+    color: red;
+}
+
+.ps-elem::first-line{
+    font-size: 20px;
+    color:green;
+}
+
+.before-after{
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom:20px;
+}
+
+.before-after::before{
+    content: url('../media/smile.gif');
+}
+
+.before-after::after{
+    content: url('../media/smile.gif');
+}
+
+.selection{
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom:20px;
+}
+
+.selection::selection{
+    background-color: brown;
+    color: yellow;
+}
+
+/* opacity */
+
+.opacity{
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.opacity img{
+   height: 200px;
+   padding: 2px;
+}
+
+.opacity .quarter{
+    opacity: 0.25;
+}
+
+.opacity .half{
+    opacity: 0.5;
+}
+
+.opacity .full{
+    opacity: 1;
+}
+
+/* on hover opacity */
+
+.opacity div:hover{
+    opacity: 1;
+}
+
+/* rgba */
+
+.rgba{
+    padding: 10px;
+    background-image: url('../media/img2.jpg');
+    background-size: cover;
+    max-width: 500px;
+    margin: auto;
+}
+
+.rgba div{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+}
+
+/* navbar */
+
+.nav-v{
+    list-style-type: none;
+}
+.nav-v li{
+    background-color: goldenrod;
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px solid brown;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-v li:last-child{
+    border: none;
+}
+.nav-v a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-v li:hover{
+    background-color: brown;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.nav-v a:active{
+    background-color: brown;
+}
+
+/* //////// */
+
+.nav-h{
+    list-style-type: none;
+    max-width: 100%;
+    background-color:blueviolet;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-h li{
+    text-align: center;
+    float: left;
+    background-color: blueviolet;
+    padding: 10px;
+    border-right: 2px solid white;
+    transition: 0.3s;
+}
+.nav-h li:last-child{
+    float: right;
+    border-right: none;
+    border-left: 2px solid white;
+}
+.nav-h a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+}
+.nav-h li:hover{
+    background-color: white;
+}
+.nav-h li:hover a{
+    color: blueviolet;
+}
+
+/* navbar dropdown */
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    color: blueviolet;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 10px;
+    color: blueviolet;
+    text-decoration: none;
+    background-color: white;
+}
+
+.dropdown-content a:hover{
+    background-color: rgb(170, 170, 170);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* dropdown */
+
+.d-down{
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    background-color: darkmagenta;
+    color: white;
+}
+
+.d-down-content{
+    top: 40px;
+    left: 0px;
+    position: absolute;
+    display: none;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+    color: black;
+    min-width: 160px;
+}
+
+.d-down:hover .d-down-content{
+    display: block;
+}
+
+/* image-gallery */
+
+.gallery{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.g-item{
+    display: inline-block;
+    width: 23%;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightgray;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.g-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.g-title{
+    padding: 10px;
+    text-align: center;
+}
+
+.g-item:hover{
+    background-color: lightcoral;
+    box-shadow:-3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:1200px){
+    .g-item{
+        display: inline-block;
+        width: 46%;
+        padding: 5px;
+        margin: 5px;
+    }        
+}
+
+@media screen and (max-width:600px){
+    .g-item{
+        display: inline-block;
+        width: 92%;
+        padding: 5px;
+        margin: 5px;
+    }        
+}
+
+/* image sprites */
+
+.sprites{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sprites li{
+    display: inline-block;
+}
+
+.sprites a{
+    display: block;
+    height: 44px;
+}
+
+.sprite-home{
+    height: 44px;
+    width: 46px;
+    background: url('../media/sprites.gif') 0 0;
+  }
+  
+.sprite-prev {
+    height: 44px;
+    width: 42px;
+    background: url('../media/sprites.gif') -47px 0;
+  }
+  
+.sprite-next {
+    height: 44px;
+    width: 42px;
+    background: url('../media/sprites.gif') -91px 0;
+  }
+
+.sprite-home a:hover {
+    background: url('../media/sprites.gif') 0 -45px;
+}
+
+.sprite-prev a:hover {
+    background: url('../media/sprites.gif') -47px -45px;
+}
+
+.sprite-next a:hover {
+    background: url('../media/sprites.gif') -91px -45px;
+}
+
+/* attribute selectors */
+
+div[car]{
+    background-color: rgb(15, 125, 189);
+    padding: 15px;
+}
+
+[bike="yamaha"]{
+    background-color: rgb(189, 163, 15);
+    padding: 15px;
+}
+
+[bike~="fzs"]{
+    background-color: rgb(11, 185, 63);
+    padding: 15px;
+}
+
+[bike|="mt"]{
+    background-color: rgb(209, 5, 124);
+    padding: 15px;
+}
+
+[bike^="r15"]{
+    background-color: rgb(211, 17, 17);
+    padding: 15px;
+}
+
+[bike$="fazer"]{
+    background-color: rgb(102, 102, 102);
+    padding: 15px;
+}
+
+[bike*="xy"]{
+    background-color: rgb(219, 199, 15);
+    padding: 15px;
+}
+
+/* forms */
+
+.user-form{
+    max-width: 600px;
+    padding: 10px;
+    background-color: rgb(170, 170, 170);
+    text-align: center;
+}
+
+.user-form input,.user-form select{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.user-form button{
+    padding: 10px;
+    width: 100%;
+    display: block;
+    background-color: rgb(15, 125, 189);
+    border: 2px solid black;
+    margin-bottom: 5px;
+    color: white;
+    outline: none;
+}
+.user-form input:focus{
+    border: 2px solid rgb(0, 110, 255);
+    width: 100%;
+}
+.user-form select:focus{
+    border: 2px solid rgb(0, 110, 255);
+    width: 100%;
+}
+
+.user-form div{
+    background-color: rgb(0, 110, 255);
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+
+/* counters */
+
+.counter{
+    counter-reset: head-1;
+}
+
+.counter h1{
+    counter-reset: head-2;
+}
+
+.counter h1::before{
+    counter-increment: head-1;
+    content:counter(head-1)"-" ;
+}
+
+.counter h2::before{
+    counter-increment: head-2;
+    content: counter(head-1)"."counter(head-2)"-";
+}

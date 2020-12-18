@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-11</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="head">Pagination</div>
+
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">&raquo;</a>
+    </div>
+
+    <div class="pagination2">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" class="active">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+    <hr class="divider" />
+    <div class="head">Multiple Columns</div>
+
+    <div class="m-cols">
+      <h3>Multi Column</h3>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+      iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+      illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+      odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+      dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+      eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+      possim assum.
+    </div>
+
+    <hr class="divider" />
+    <div class="head">User Interface</div>
+
+    <div>Resize</div>
+
+    <div class="resize horizontal">Resize Horizontal</div>
+
+    <div class="resize vertical">Resize Vertical</div>
+
+    <div class="resize both">Resize Both</div>
+
+    <textarea class="resize none">
+        Textarea resize none
+    </textarea>
+
+    <div>Outline</div>
+
+    <div class="outline-offset">Outline offset & style</div>
+
+    <hr class="divider" />
+    <div class="head">CSS Variables</div>
+
+    <div class="css-primary">CSS Variable Primary</div>
+
+    <div class="css-light">CSS Variable Light</div>
+
+    <div class="css-override">CSS Variable Override</div>
+
+    <div class="css-change">
+      CSS variable change using JS
+      <button onclick="changeColor()">click here to Change Color</button>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">CSS Box-Sizing</div>
+
+    <div class="content-box">Content Box (Height-100px Width-200px)</div>
+    <div class="border-box">Border Box (Height-100px Width-200px)</div>
+
+    <script>
+      {
+        function changeColor() {
+          var r = document.querySelector(".css-change");
+          r.style.setProperty("--primary", "salmon");
+        }
+      }
+    </script>
+  </body>
+</html>

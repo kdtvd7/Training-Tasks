@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+canvas{
+    margin-bottom: 20px;
+    border: 1px solid lightsteelblue;
+    display: block;
+}
+
+.head{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: lightseagreen;
+    margin-bottom: 20px;
+}
+
+.divider{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 2px;
+    background-color: gray;
+    border: none;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-2</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <table class="custom-table">
+      <caption>
+        Smartphone Prices
+      </caption>
+      <tr>
+        <th rowspan="2">Brand</th>
+        <th rowspan="2">Model</th>
+        <th colspan="2">Price</th>
+      </tr>
+      <tr>
+        <th>USA</th>
+        <th>India</th>
+      </tr>
+      <tr>
+        <td>Samsung</td>
+        <td>Note 20 Ultra</td>
+        <td>$1400</td>
+        <td>Rs.120000</td>
+      </tr>
+      <tr>
+        <td>Apple</td>
+        <td>iPhone 12 Pro Max</td>
+        <td>$1300</td>
+        <td>Rs.110000</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- lists -->
+
+    <div class="desc">Unordered List</div>
+    <ul>
+      <li>Coffee
+          <ul>
+              <li>Black</li>
+              <li>Cold</li>
+              <li>Normal</li>
+          </ul>
+      </li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <div class="desc">Ordered List</div>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <div class="desc">Details List</div>
+    <dl>
+      <dt>Samsung</dt>
+      <dd>- South-Korean Brand</dd>
+      <dt>Apple</dt>
+      <dd>- American Brand</dd>
+    </dl>
+
+    <div class="desc">Unordered List horizontal</div>
+    <ul class="navi">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <div class="desc">Ordered List with type & counting</div>
+    <ol type="1" start="40">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <!-- block and inline elements -->
+    <div class="block-elem">
+        this is a block element (takes 100%  width)
+    </div><br/>
+    <span class="inline-elem">
+        this is a inline element (takes minimum width possible)
+    </span><br/><br/>
+
+    <!-- i frame -->
+
+    <iframe src="" name="xframe" height="250" width="400" style="border: none;"></iframe>
+    <p>
+        <a href="https://www.techved.com" target="xframe">Open link in iFrame</a>
+    </p>
+
+    <!-- scripts -->
+
+    <div id="demo">
+        <img id="demo-img" src="images/dummy.png" alt="js-demo" height="200"/>
+    </div>
+
+    <button onclick="document.getElementById('demo').innerHTML+=Date()">Set Date</button>
+    <button onclick="funSetColor()">Set Color</button>
+    <button onclick="funSetPadding()">Set Padding</button>
+    <button onclick="funSetMargin()">Set Margin</button>
+    <button onclick="funChangeImage()">Change Image</button>
+    <br/>
+
+    <!-- layout -->
+
+    <div class="layout">
+            <div class="header">Heading</div>
+            <div class="content">
+                <div class="navbar">
+                    <ul>
+                       <li><a href="#">Link1</a></li> 
+                       <li><a href="#">Link2</a></li> 
+                       <li><a href="#">Link3</a></li> 
+                    </ul>
+                </div>
+                <div class="article">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, consectetur. Vitae soluta perspiciatis pariatur, deserunt doloremque quo perferendis dolorum cum excepturi nostrum nesciunt quisquam voluptas distinctio commodi voluptatibus totam aspernatur.
+                </div>
+            </div>
+            <div class="footer">Footer</div>
+    </div>
+    
+    <script>
+        var demoDiv = document.getElementById('demo');
+        function funSetColor(){
+            demoDiv.style.backgroundColor="lightBlue";
+        }
+        function funSetPadding(){
+            demoDiv.style.padding="10px";
+        }
+        function funSetMargin(){
+            demoDiv.style.margin="10px";
+        }
+        function funChangeImage(){
+            document.getElementById('demo-img').setAttribute('src',"images/image.png");
+        }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  </body>
+</html>
