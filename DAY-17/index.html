@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-17</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="head">Jquery ( get )</div>
+
+    <div id="get-html" class="style-1"><span>Hello</span> World</div>
+
+    <div id="get-text" class="style-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+      voluptatibus ad unde ea eligendi aliquid modi earum suscipit accusamus a!
+      Soluta aperiam eveniet sapiente cumque qui corporis harum quasi
+      perferendis!
+    </div>
+
+    <input id="get-val" type="text" value="Dummy text" />
+
+    <div class="style-1" id="get-attr">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quibusdam
+      voluptatibus cumque architecto dolorem, rem labore. Soluta nemo deleniti
+      nihil quod fugit obcaecati veniam, ab a vero. Iure, accusantium cum.
+    </div>
+
+    <div style="margin-top: 10px">
+      <button class="get-html">Get html</button>
+      <button class="get-text">Get text</button>
+      <button class="get-val">Get val</button>
+      <button class="get-attr">Get attr</button>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( set )</div>
+
+    <div id="set-html" class="style-1"><span>Hello</span> World</div>
+
+    <div id="set-text" class="style-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+      voluptatibus ad unde ea eligendi aliquid modi earum suscipit accusamus a!
+      Soluta aperiam eveniet sapiente cumque qui corporis harum quasi
+      perferendis!
+    </div>
+
+    <input id="set-val" type="text" value="Dummy text" />
+
+    <div style="margin-top: 10px">
+      <button class="set-html">Set html</button>
+      <button class="set-text">Set text</button>
+      <button class="set-val">Set val</button>
+    </div>
+
+    <div class="style-1" id="set-attr">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quibusdam
+      voluptatibus cumque architecto dolorem, rem labore. Soluta nemo deleniti
+      nihil quod fugit obcaecati veniam, ab a vero. Iure, accusantium cum.
+    </div>
+
+    <div class="style-1">
+      <a href="https://www.w3schools.com" id="set-attr-callback"
+        >link href changed with callback</a
+      >
+    </div>
+
+    <div class="style-1">
+      <a
+        href="https://www.w3schools.com"
+        id="set-attr-multiple"
+        title="change attr"
+        >multiple attr changed</a
+      >
+    </div>
+
+    <div style="margin-top: 10px">
+      <button class="set-attr">Set attr</button>
+      <button class="set-attr-callback">Set attr ( using callback )</button>
+      <button class="set-attr-multiple">Set attr ( multiple )</button>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( add )</div>
+
+    <div class="style-1" id="append">Append</div>
+    <div class="style-1" id="prepend">Prepend</div>
+    <div class="style-1" id="after">After</div>
+    <div class="style-1" id="before">Before</div>
+
+    <div>
+      <button class="append">Append</button>
+      <button class="prepend">Prepend</button>
+      <button class="after">After</button>
+      <button class="before">Before</button>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( remove )</div>
+
+    <div class="style-1" id="remove">Remove</div>
+    <div class="style-1" id="empty" style="height: 100px">
+      <p>Empty</p>
+    </div>
+    <div class="style-1 rm-1" id="remove-multiple">Remove-Multiple</div>
+    <div class="style-1 rm-2" id="remove-multiple">Remove-Multiple</div>
+
+    <div>
+      <button class="remove">Remove</button>
+      <button class="empty">Empty</button>
+      <button class="remove-multiple">Remove multiple</button>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( CSS Classes )</div>
+
+    <div class="nothing" id="addClass">Add-Class</div>
+    <div class="style-1" id="removeClass">Remove-Class</div>
+    <div class="" id="toggleClass">Toogle-Class</div>
+
+    <div>
+      <button class="addClass">Add-class</button>
+      <button class="removeClass">Remove-class</button>
+      <button class="toggleClass">Toggle-class</button>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( CSS )</div>
+
+    <div class="" id="css">CSS Styling</div>
+
+    <div>
+      <button class="css">CSS Styling</button>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Dimensions )</div>
+
+    <div class="style-1" id="height">
+      Height (doesnt includes padding, border and margin)
+    </div>
+    <div class="style-1" id="width">
+      Width (doesnt includes padding, border and margin)
+    </div>
+
+    <div>
+      <button class="height">Height</button>
+      <button class="width">Width</button>
+    </div>
+
+    <div class="style-1" id="innerHeight">Inner-Height (includes padding)</div>
+    <div class="style-1" id="innerWidth">Inner-Width (includes padding)</div>
+
+    <div>
+      <button class="innerHeight">Inner-Height</button>
+      <button class="innerWidth">Inner-Width</button>
+    </div>
+
+    <div class="style-1" id="outerHeight">
+      Outer-Height (includes padding, border)
+    </div>
+    <div class="style-1" id="outerWidth">
+      Outer-Width (includes padding, border)
+    </div>
+
+    <div>
+      <button class="outerHeight">Outer-Height</button>
+      <button class="outerWidth">Outer-Width</button>
+    </div>
+
+    <div class="style-1" id="outerHeightTrue">
+      Outer-Height-True (includes padding, border, margin)
+    </div>
+    <div class="style-1" id="outerWidthTrue">
+      Outer-Width-True (includes padding, border, margin)
+    </div>
+
+    <div>
+      <button class="outerHeightTrue">Outer-Height-True</button>
+      <button class="outerWidthTrue">Outer-Width-True</button>
+    </div>
+
+    <script src="./js/functions.js"></script>
+  </body>
+</html>

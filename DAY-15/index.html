@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-15</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="head">JQuery Syntax & Selectors</div>
+
+    <div class="style-1" onclick="funHide(this)">
+      click to hide this div (using this keyword)
+    </div>
+
+    <p class="style-1" onclick="funHideTag()">
+      click to hide this div (using tagname)
+    </p>
+
+    <div class="style-1 hide" onclick="funHideClass()">
+      click to hide this div (using class)
+    </div>
+
+    <div class="style-1" id="hide" onclick="funHideId()">
+      click to hide this div (using id)
+    </div>
+
+    <div class="style-1" id="ready">
+      div hides on document ready (using document.ready())
+    </div>
+
+    <hr class="divider" />
+    <div class="head">JQuery Attribute Selectors</div>
+
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <a href="#">link (selected using attribute)</a>
+
+    <hr class="divider" />
+    <div class="head">JQuery Events</div>
+
+    <div class="style-1 click">Click the button below</div>
+    <button id="click">Click here!</button>
+
+    <div class="style-1 dblclick">Double Click the button below</div>
+    <button id="dblclick">Double Click here!</button>
+
+    <div class="style-1 mouse">Bring Mouse Here</div>
+    <div class="style-1 mouse-up-down">Mouse Up & Down</div>
+
+    <hr class="divider" />
+    <div class="head">JQuery events (focus,blur,keyup,keydown)</div>
+
+    <input type="text" />
+
+    <hr class="divider" />
+    <div class="head">JQuery events (scroll)</div>
+
+    <div
+      class="scroll"
+      style="
+        border: 1px solid black;
+        width: 200px;
+        height: 100px;
+        overflow: scroll;
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quas
+      quisquam architecto, autem labore et sed odio tempora fuga molestias enim
+      nobis rerum non atque tenetur ipsum porro itaque nemo!
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#ready").hide(3000);
+        $("tr:odd").css("color", "blue");
+        $("tr:even").css("color", "red");
+        $('a[href="#"]').css("font-size", "20px");
+      });
+
+      function funHide(elm) {
+        $(elm).hide();
+      }
+      function funHideTag() {
+        $("p").hide();
+      }
+      function funHideClass() {
+        $(".hide").hide();
+      }
+      function funHideId() {
+        $("#hide").hide();
+      }
+
+      $("#click").click(function () {
+        $(".click").toggle();
+      });
+
+      $("#dblclick").dblclick(function () {
+        $(".dblclick").toggle();
+      });
+
+      // mouse enter leave
+
+      $(".mouse").mouseenter(function () {
+        $(".mouse").css("background-color", "pink");
+        $(".mouse").css("color", "black");
+      });
+
+      $(".mouse").mouseleave(function () {
+        $(".mouse").css("background-color", "black");
+        $(".mouse").css("color", "pink");
+      });
+
+      // mouse up down
+
+      $(".mouse-up-down").on({
+        mousedown: function () {
+          $(this).css("background-color", "pink");
+          $(this).css("color", "black");
+        },
+
+        mouseup: function () {
+          $(this).css("background-color", "black");
+          $(this).css("color", "pink");
+        },
+      });
+
+      //   input
+
+      $("input").focus(function () {
+        $(this).css("background-color", "pink");
+      });
+
+      $("input").blur(function () {
+        $(this).css("background-color", "yellow");
+      });
+
+      $("input").on({
+        keyup: function () {
+          $(this).css("color", "red");
+        },
+        keydown: function () {
+          $(this).css("color", "black");
+        },
+      });
+
+      $(".scroll").scroll(function () {
+        $(this).css("color", "red");
+      });
+
+      $(window).resize(function () {
+        $("body").css("background-color", "pink");
+      });
+    </script>
+  </body>
+</html>

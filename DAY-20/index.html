@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-20</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="padding-bottom: 100px;">
+    <div class="h5 bg-dark text-light p-2">Buttons</div>
+    <div class="p-3">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">a & input tag as buttons</div>
+    <div class="p-3">
+      <a href="#" class="btn btn-primary" role="button">Link Button</a>
+      <input type="button" class="btn btn-primary" value="Input Button" />
+      <input type="submit" class="btn btn-primary" value="Submit Button" />
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Button Size</div>
+    <div class="p-3">
+      <button type="button" class="btn btn-danger btn-lg">Large</button>
+      <button type="button" class="btn btn-danger">Medium</button>
+      <button type="button" class="btn btn-danger btn-sm">Small</button>
+      <button type="button" class="btn btn-danger btn-block">
+        Block Button
+      </button>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Active/Disabled Button</div>
+    <div class="p-3">
+      <button type="button" class="btn btn-primary active">Active</button>
+      <button type="button" class="btn btn-primary" disabled>Disabled</button>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Spinner Button</div>
+    <div class="p-3">
+      <button type="button" class="btn btn-warning">
+        <span class="spinner-grow spinner-grow-sm"></span> Loading...
+      </button>
+      <button type="button" class="btn btn-warning">
+        <span class="spinner-border spinner-border-sm"></span> Loading...
+      </button>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Button Group</div>
+    <div class="p-3">
+      <div class="btn-group btn-group-lg">
+        <button type="button" class="btn btn-primary">Dell</button>
+        <button type="button" class="btn btn-primary">Lenovo</button>
+        <button type="button" class="btn btn-primary">Asus</button>
+      </div>
+      <div class="btn-group btn-group">
+        <button type="button" class="btn btn-danger">Dell</button>
+        <button type="button" class="btn btn-danger">Lenovo</button>
+        <button type="button" class="btn btn-danger">Asus</button>
+      </div>
+      <div class="btn-group btn-group-sm">
+        <button type="button" class="btn btn-success">Dell</button>
+        <button type="button" class="btn btn-success">Lenovo</button>
+        <button type="button" class="btn btn-success">Asus</button>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Vertical Button Group</div>
+    <div class="p-3">
+      <div class="btn-group-vertical">
+        <button type="button" class="btn btn-success">Dell</button>
+        <button type="button" class="btn btn-success">Lenovo</button>
+        <button type="button" class="btn btn-success">Asus</button>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Button Group with Dropdown</div>
+    <div class="p-3">
+      <div class="btn-group">
+        <button type="button" class="btn btn-success">Dell</button>
+        <button type="button" class="btn btn-success">Lenovo</button>
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Asus
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Tablet</a>
+          <a class="dropdown-item" href="#">Smartphone</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Split Dropdown</div>
+    <div class="p-3">
+      <div class="btn-group">
+        <button type="button" class="btn btn-success">Dell</button>
+        <button type="button" class="btn btn-success">Lenovo</button>
+        <button type="button" class="btn btn-success">Asus</button>
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle dropdown-toggle-split"
+          data-toggle="dropdown"
+        ></button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Tablet</a>
+          <a class="dropdown-item" href="#">Smartphone</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">
+      Vertical Button Group with Dropdown
+    </div>
+    <div class="p-3">
+      <div class="btn-group-vertical">
+        <button type="button" class="btn btn-success">Dell</button>
+        <button type="button" class="btn btn-success">Lenovo</button>
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Asus
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Tablet</a>
+          <a class="dropdown-item" href="#">Smartphone</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Badges</div>
+    <div class="p-3">
+      <span class="badge badge-primary">Primary</span>
+      <span class="badge badge-secondary">Secondary</span>
+      <span class="badge badge-success">Success</span>
+      <span class="badge badge-danger">Danger</span>
+      <span class="badge badge-warning">Warning</span>
+      <span class="badge badge-info">Info</span>
+      <span class="badge badge-light">Light</span>
+      <span class="badge badge-dark">Dark</span>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Badge Pill</div>
+    <div class="p-3">
+      <span class="badge badge-pill badge-primary">Primary</span>
+      <span class="badge badge-pill badge-secondary">Secondary</span>
+      <span class="badge badge-pill badge-success">Success</span>
+      <span class="badge badge-pill badge-danger">Danger</span>
+      <span class="badge badge-pill badge-warning">Warning</span>
+      <span class="badge badge-pill badge-info">Info</span>
+      <span class="badge badge-pill badge-light">Light</span>
+      <span class="badge badge-pill badge-dark">Dark</span>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Badge inside other elements</div>
+    <div class="p-3">
+      <button type="button" class="btn btn-primary btn-lg">
+        New Messages <span class="badge badge-danger">5</span>
+      </button>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Progress Bar</div>
+    <div class="p-3">
+      <div class="progress">
+        <div class="progress-bar" style="width: 64%"></div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Progress Bar Label & Color</div>
+    <div class="p-3">
+      <div class="progress" style="height: 50px">
+        <div class="progress-bar bg-success" style="width: 64%; height: 50px">
+          64%
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Progress Bar Striped</div>
+    <div class="p-3">
+      <div class="progress" style="height: 20px">
+        <div
+          class="progress-bar progress-bar-striped bg-danger"
+          style="width: 34%; height: 20px"
+        >
+          34%
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Progress Bar Animated</div>
+    <div class="p-3">
+      <div class="progress" style="height: 20px">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+          style="width: 74%; height: 20px"
+        >
+          74%
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Multiple Progress Bar</div>
+    <div class="p-3">
+      <div class="progress">
+        <div class="progress-bar bg-success" style="width: 40%">Video</div>
+        <div class="progress-bar bg-warning" style="width: 10%">Audio</div>
+        <div class="progress-bar bg-danger" style="width: 20%">Other</div>
+        <div class="progress-bar bg-primary" style="width: 30%">Free Space</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Spinner Border</div>
+    <div class="p-3">
+      <div class="spinner-border text-primary"></div>
+      <div class="spinner-border text-success"></div>
+      <div class="spinner-border text-info"></div>
+      <div class="spinner-border text-warning"></div>
+      <div class="spinner-border text-danger"></div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Spinner Grow</div>
+    <div class="p-3">
+      <div class="spinner-grow text-primary"></div>
+      <div class="spinner-grow text-success"></div>
+      <div class="spinner-grow text-info"></div>
+      <div class="spinner-grow text-warning"></div>
+      <div class="spinner-grow text-danger"></div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Spinner Small</div>
+    <div class="p-3">
+      <div class="spinner-border spinner-border-sm text-primary"></div>
+      <div class="spinner-border spinner-border-sm text-success"></div>
+      <div class="spinner-grow spinner-grow-sm text-danger"></div>
+      <div class="spinner-grow spinner-grow-sm text-warning"></div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Pagination</div>
+    <div class="p-3">
+      <ul class="pagination">
+        <li class="page-items"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Pagination Active/Disabled</div>
+    <div class="p-3">
+      <ul class="pagination">
+        <li class="page-items"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Pagination Sizes</div>
+    <div class="p-3">
+      <ul class="pagination pagination-lg">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+
+      <ul class="pagination pagination-sm">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Pagination Alignment</div>
+    <div class="p-3">
+      <ul class="pagination" style="margin: 20px 0">
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+      </ul>
+      <ul class="pagination justify-content-center" style="margin: 20px 0">
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+      </ul>
+      <ul class="pagination justify-content-end" style="margin: 20px 0">
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Breadcrumbs</div>
+    <div class="p-3">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">India</a></li>
+        <li class="breadcrumb-item"><a href="#">Maharashtra</a></li>
+        <li class="breadcrumb-item"><a href="#">Mumbai</a></li>
+        <li class="breadcrumb-item active">Marine Lines</li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">List Groups</div>
+    <div class="p-3">
+      <ul class="list-group">
+        <li class="list-group-item">First item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">List Group Active</div>
+    <div class="p-3">
+      <ul class="list-group">
+        <li class="list-group-item active">Active item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">List Group Flushed</div>
+    <div class="p-3">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">First item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">List Group Horizontal</div>
+    <div class="p-3">
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">First item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+        <li class="list-group-item">Fourth item</li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">List Group Colors</div>
+    <div class="p-3">
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action list-group-item-warning"
+          >Warning</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action list-group-item-danger"
+          >Danger</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action list-group-item-primary"
+          >Primary</a
+        >
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">List Group Badge</div>
+    <div class="p-3">
+      <ul class="list-group">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          HTML
+          <span class="badge badge-primary badge-pill">3</span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          CSS
+          <span class="badge badge-primary badge-pill">5</span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          JavaScript
+          <span class="badge badge-primary badge-pill">1</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Card</div>
+    <div class="p-3">
+      <div class="card">
+        <div class="card-header">Header</div>
+        <div class="card-body">Content</div>
+        <div class="card-footer">Footer</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Card Colors</div>
+    <div class="p-3">
+      <div class="card bg-success text-light">
+        <div class="card-header">Header</div>
+        <div class="card-body">Content</div>
+        <div class="card-footer">Footer</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Card Title</div>
+    <div class="p-3">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio hic
+            aspernatur ut iste consectetur ab perspiciatis ipsa eum inventore
+            officia quis praesentium debitis laborum consequatur voluptas eaque
+            nesciunt, iure repellendus.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Card Image</div>
+    <div class="p-3">
+      <div class="card mb-3" style="width: 400px">
+        <img class="card-img-top" src="img.png" alt="Card image" />
+        <div class="card-body">
+          <h4 class="card-title">Card Title</h4>
+          <p class="card-text">Dummy Text</p>
+          <a href="#" class="btn btn-primary">Do something</a>
+        </div>
+      </div>
+      <div class="card" style="width: 400px">
+        <div class="card-body">
+          <h4 class="card-title">Card Title</h4>
+          <p class="card-text">Dummy Text</p>
+          <a href="#" class="btn btn-primary">Do something</a>
+        </div>
+        <img class="card-img-bottom" src="img.png" alt="Card image" />
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Card Image Overlay</div>
+    <div class="p-3">
+      <div class="card mb-3" style="width: 400px">
+        <img class="card-img-top" src="img.png" alt="Card image" />
+        <div class="card-img-overlay">
+          <h4 class="card-title">Card Title</h4>
+          <p class="card-text">Dummy Text</p>
+          <a href="#" class="btn btn-primary">Do something</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Dropdown with header & divider</div>
+    <div class="p-3">
+      <div class="dropdown">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Dropdown
+        </button>
+        <div class="dropdown-menu">
+          <div class="dropdown-header">Dropdown header 1</div>
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-header">Dropdown header 2</div>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Dropdown with active & disabled</div>
+    <div class="p-3">
+      <div class="dropdown">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Dropdown
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item active" href="#">Link 1</a>
+          <a class="dropdown-item disabled" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Dropdown position</div>
+    <div class="p-3 d-flex justify-content-between">
+      <div class="dropdown dropright">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Drop-Right
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item active" href="#">Link 1</a>
+          <a class="dropdown-item disabled" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown dropup">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Drop-Up
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item active" href="#">Link 1</a>
+          <a class="dropdown-item disabled" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown dropleft">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Drop-Left
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item active" href="#">Link 1</a>
+          <a class="dropdown-item disabled" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Collapse</div>
+    <div class="p-3">
+      <button class="btn btn-danger" data-toggle="collapse" data-target="#demo">
+        Collapse
+      </button>
+      <div id="demo" class="collapse show">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, atque.
+        Nostrum repellat architecto placeat porro quaerat fugit animi blanditiis
+        earum totam saepe soluta, necessitatibus cumque. Sit incidunt quibusdam
+        natus iure!
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Collapse Accordian</div>
+    <div class="p-3">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              Collapsible Item 1
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+              ratione, eius fugiat ullam velit reprehenderit pariatur facilis
+              ipsa, eum sed voluptatum quae dolores culpa veritatis! Maxime
+              reprehenderit vel exercitationem necessitatibus.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a
+              class="collapsed card-link"
+              data-toggle="collapse"
+              href="#collapseTwo"
+            >
+              Collapsible Item 2
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+              ducimus maxime at dolores id quo omnis accusamus ut tempora ab
+              nemo esse, sint itaque quis earum. Incidunt a corrupti tempora.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Nav</div>
+    <div class="p-3">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Nav Right-Aligned</div>
+    <div class="p-3">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Nav Tabs</div>
+    <div class="p-3">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Nav Pills</div>
+    <div class="p-3">
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Nav Tabs Dynamic</div>
+    <div class="p-3">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane container active" id="home">Home Tab</div>
+        <div class="tab-pane container fade" id="menu1">Menu 1 TAB</div>
+        <div class="tab-pane container fade" id="menu2">Menu 2 TAB</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Simple Navbar</div>
+    <div class="p-3">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <a class="navbar-brand" href="#">Logo</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Responsive Navbar</div>
+    <div class="p-3">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      
+        <a class="navbar-brand" href="#">Logo</a>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <div class="h5 bg-dark text-light p-2">Fixed Navbar</div>
+    <div class="p-3">
+      <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-bottom">
+      
+        <a class="navbar-brand" href="#">Logo</a>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </body>
+</html>

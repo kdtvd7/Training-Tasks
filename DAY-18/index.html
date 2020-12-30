@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-18</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="head">Jquery ( Parent Method )</div>
+
+    <div>
+      Parent
+      <div id="parentDemo">Child</div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Parents Method )</div>
+
+    <div>
+      Grand-Parent
+      <div>
+        Parent
+        <div id="parentsDemo">Child</div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Parents-Until Method )</div>
+
+    <div id="great-grand">
+      Great-Grand-Parent
+      <div>
+        Grand-Parent
+        <div>
+          Parent
+          <div id="parentsUntilDemo">Child</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Children Method )</div>
+
+    <div id="childrenDemo">
+      Parent
+      <div>
+        Child-1
+        <div class="style-1">Grand-Child</div>
+      </div>
+      <div>
+        Child-2
+        <div class="style-1">Grand-Child</div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Children Filter Method )</div>
+
+    <div id="childrenFilterDemo">
+      Parent
+      <div>
+        Child-1
+        <div class="style-1">Grand-Child</div>
+      </div>
+      <p>
+        Child-2
+        <span class="style-1">Grand-Child</span>
+      </p>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Find Method )</div>
+
+    <div id="findDemo">
+      Parent
+      <div>
+        Child-1
+        <div>Grand-Child</div>
+      </div>
+      <p>
+        Child-2
+        <span>Grand-Child</span>
+      </p>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Siblings Method )</div>
+
+    <div class="style-1">
+      Parent
+      <div id="siblingsDemo">Siblings-1</div>
+      <div>Siblings-2</div>
+      <div>Siblings-3</div>
+      <div>Siblings-4</div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Siblings Filter Method )</div>
+
+    <div class="style-1">
+      Parent
+      <div id="siblingsFilterDemo">Siblings-1</div>
+      <p>Siblings-2</p>
+      <div>Siblings-3</div>
+      <div>Siblings-4</div>
+      <p>Siblings-5</p>
+      <p>Siblings-6</p>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Next Method )</div>
+
+    <div class="style-1">
+      Parent
+      <div id="nextDemo">Siblings-1</div>
+      <p>Siblings-2</p>
+      <div>Siblings-3</div>
+      <div>Siblings-4</div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Next-All Method )</div>
+
+    <div class="style-1">
+      Parent
+      <div id="nextAllDemo">Siblings-1</div>
+      <p>Siblings-2</p>
+      <div>Siblings-3</div>
+      <div>Siblings-4</div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Next-Until Method )</div>
+
+    <div class="style-1">
+      Parent
+      <div id="nextUntilDemo">Siblings-1</div>
+      <p>Siblings-2</p>
+      <div>Siblings-3</div>
+      <div>Siblings-4</div>
+      <h4>Siblings-5</h4>
+      <div>Siblings-6</div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Prev Method )</div>
+
+    <div class="style-1">
+      Parent
+      <div>Siblings-1</div>
+      <p>Siblings-2</p>
+      <div>Siblings-3</div>
+      <div id="prevDemo">Siblings-4</div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Prev-All Method )</div>
+
+    <div class="style-1">
+      Parent
+      <div>Siblings-1</div>
+      <p>Siblings-2</p>
+      <div>Siblings-3</div>
+      <div id="prevAllDemo">Siblings-4</div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Prev-Until Method )</div>
+
+    <div class="style-1">
+      Parent
+      <div>Siblings-1</div>
+      <p>Siblings-2</p>
+      <div>Siblings-3</div>
+      <div>Siblings-4</div>
+      <h4>Siblings-5</h4>
+      <div id="prevUntilDemo">Siblings-6</div>
+    </div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( First Method )</div>
+
+    <div class="firstDemo">Siblings-1</div>
+    <div class="firstDemo">Siblings-2</div>
+    <div class="firstDemo">Siblings-3</div>
+    <div class="firstDemo">Siblings-4</div>
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Last Method )</div>
+
+    <div class="lastDemo">Siblings-1</div>
+    <div class="lastDemo">Siblings-2</div>
+    <div class="lastDemo">Siblings-3</div>
+    <div class="lastDemo">Siblings-4</div>
+
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Eq Method )</div>
+
+    <div class="eqDemo">Siblings-1</div>
+    <div class="eqDemo">Siblings-2</div>
+    <div class="eqDemo">Siblings-3</div>
+    <div class="eqDemo">Siblings-4</div>
+
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Filter Method )</div>
+
+    <div class="filterDemo">Siblings-1</div>
+    <div class="filterDemo">Siblings-2</div>
+    <div class="filterDemo" id="filter">Siblings-3</div>
+    <div class="filterDemo">Siblings-4</div>
+
+
+    <hr class="divider" />
+    <div class="head">Jquery ( Not Method )</div>
+
+    <div class="notDemo">Siblings-1</div>
+    <div class="notDemo">Siblings-2</div>
+    <div class="notDemo" id="odd">Siblings-3</div>
+    <div class="notDemo">Siblings-4</div>
+
+    <script src="./js/functions.js"></script>
+  </body>
+</html>
