@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DAY-22</title>
     <link
       rel="stylesheet"
@@ -25,9 +25,563 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .border {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
     <div class="h5 bg-dark text-light p-2">Toast</div>
-    <div class="p-3"></div>
-</body>
+    <div class="p-3">
+      <div class="toast">
+        <div class="toast-header">Heading</div>
+        <div class="toast-body">Body</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Toast Closeable</div>
+    <div class="p-3">
+      <div class="toast" data-autohide="false">
+        <div class="toast-header">
+          <strong class="mr-auto">Heading</strong>
+          <button class="close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">Body</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Scroll-Spy</div>
+    <div class="p-3">
+      <a href="./scrollspy.html" class="btn btn-danger">Scroll-Spy Demo</a>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Border</div>
+    <div class="p-3">
+      <span class="border"></span>
+      <span class="border border-0"></span>
+      <span class="border border-top-0"></span>
+      <span class="border border-right-0"></span>
+      <span class="border border-bottom-0"></span>
+      <span class="border border-left-0"></span>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Border Radius</div>
+    <div class="p-3">
+      <span class="border bg-dark rounded-circle"></span>
+      <span class="border bg-dark rounded"></span>
+      <span class="border bg-dark rounded-0"></span>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Float & Clearfix</div>
+    <div class="p-3">
+      <div class="clearfix">
+        <span class="float-left p-2 bg-warning">Float left</span>
+        <span class="float-right p-2 bg-warning">Float right</span>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Centered</div>
+    <div class="p-3">
+      <div class="mx-auto bg-warning p-2" style="width: 200px">Centered</div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Width</div>
+    <div class="p-3">
+      <div class="w-25 mb-2 p-2 bg-warning">Width 25%</div>
+      <div class="w-50 mb-2 p-2 bg-warning">Width 50%</div>
+      <div class="w-75 mb-2 p-2 bg-warning">Width 75%</div>
+      <div class="w-100 mb-2 p-2 bg-warning">Width 100%</div>
+      <div class="mw-100 mb-2 p-2 bg-warning">Max Width 100%</div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Height</div>
+    <div class="p-3">
+      <div style="height: 200px">
+        <div class="h-25 d-inline-block p-2 bg-warning">Height 25%</div>
+        <div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
+        <div class="h-75 d-inline-block p-2 bg-warning">Height 75%</div>
+        <div class="h-100 d-inline-block p-2 bg-warning">Height 100%</div>
+        <div class="mh-100 d-inline-block p-2 bg-warning">Max Height 100%</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Padding & Margin</div>
+    <div class="p-3">
+      <div class="p-5 bg-primary text-light">Padding</div>
+      <div class="m-5 bg-primary text-light">Margin</div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Shadow</div>
+    <div class="p-3">
+      <div class="m-3 p-3 shadow-none">Shadow None</div>
+      <div class="m-3 p-3 shadow-sm">Shadow Small</div>
+      <div class="m-3 p-3 shadow">Shadow</div>
+      <div class="m-3 p-3 shadow-lg">Shadow Large</div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Text Vertical Align</div>
+    <div class="p-3">
+      <span class="align-baseline">baseline</span>
+      <span class="align-top">top</span>
+      <span class="align-middle">middle</span>
+      <span class="align-bottom">bottom</span>
+      <span class="align-text-top">text-top</span>
+      <span class="align-text-bottom">text-bottom</span>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Embed Responsive</div>
+    <div class="p-3">
+      <div class="embed-responsive embed-responsive-21by9 mb-3 w-25">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/FsHrV26dKD8"
+        ></iframe>
+      </div>
+      <div class="embed-responsive embed-responsive-16by9 mb-3 w-25">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/FsHrV26dKD8"
+        ></iframe>
+      </div>
+      <div class="embed-responsive embed-responsive-4by3 mb-3 w-25">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/FsHrV26dKD8"
+        ></iframe>
+      </div>
+      <div class="embed-responsive embed-responsive-1by1 mb-3 w-25">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/FsHrV26dKD8"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Visibility</div>
+    <div class="p-3">
+      <div class="visible">I am visible</div>
+      <div class="invisible">I am invisible</div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Close Icon</div>
+    <div class="p-3 mb-4">
+      <button type="button" class="close">&times;</button>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">SR-only</div>
+    <div class="p-3">
+      <span class="sr-only"
+        >Hidden on all screens except for screen readers.</span
+      >
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex</div>
+    <div class="p-3">
+      <div class="d-flex p-3 bg-dark text-white">
+        <div class="p-2 bg-success">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Inline Flex</div>
+    <div class="p-3">
+      <div class="d-inline-flex p-3 bg-dark text-white">
+        <div class="p-2 bg-success">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex-Row</div>
+    <div class="p-3">
+      <div class="d-flex flex-row bg-secondary mb-3">
+        <div class="p-2 bg-success">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+
+      <div class="d-flex flex-row-reverse bg-secondary">
+        <div class="p-2 bg-success">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex-Column</div>
+    <div class="p-3">
+      <div class="d-flex flex-column mb-3">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+
+      <div class="d-flex flex-column-reverse">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex-Justify</div>
+    <div class="p-3">
+      <div class="d-flex justify-content-start mb-3 bg-light">
+        <div class="p-2 bg-info">start</div>
+        <div class="p-2 bg-warning">start</div>
+        <div class="p-2 bg-primary">start</div>
+      </div>
+
+      <div class="d-flex justify-content-end mb-3 bg-light">
+        <div class="p-2 bg-info">end</div>
+        <div class="p-2 bg-warning">end</div>
+        <div class="p-2 bg-primary">end</div>
+      </div>
+
+      <div class="d-flex justify-content-between mb-3 bg-light">
+        <div class="p-2 bg-info">between</div>
+        <div class="p-2 bg-warning">between</div>
+        <div class="p-2 bg-primary">between</div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-3 bg-light">
+        <div class="p-2 bg-info">center</div>
+        <div class="p-2 bg-warning">center</div>
+        <div class="p-2 bg-primary">center</div>
+      </div>
+
+      <div class="d-flex justify-content-around mb-3 bg-light">
+        <div class="p-2 bg-info">around</div>
+        <div class="p-2 bg-warning">around</div>
+        <div class="p-2 bg-primary">around</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex-Fill</div>
+    <div class="p-3">
+      <div class="d-flex">
+        <div class="p-2 bg-info flex-fill">Flex item 1</div>
+        <div class="p-2 bg-warning flex-fill">Flex item 2</div>
+        <div class="p-2 bg-primary flex-fill">Flex item 3</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex-Grow & Flex-Shrink</div>
+    <div class="p-3">
+      <div class="d-flex">
+        <div class="p-2 bg-primary flex-grow-1">Flex Shrink</div>
+        <div class="p-2 bg-success flex-shrink-1">Flex Shrink</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex-Grow & Flex-Shrink</div>
+    <div class="p-3">
+      <div class="d-flex">
+        <div class="p-2 bg-info order-3">Flex item 1</div>
+        <div class="p-2 bg-warning order-2">Flex item 2</div>
+        <div class="p-2 bg-primary order-1">Flex item 3</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex-Wrap</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex-Wrap-Reverse</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap-reverse">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex-Nowrap</div>
+    <div class="p-3">
+      <div class="d-flex flex-nowrap">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Content-Start</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-content-start" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Content-End</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-content-end" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Content-Center</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-content-center" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Content-Around</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-content-around" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Content-Stretch</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-content-stretch" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Items-Start</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-items-start" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Items-End</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-items-end" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Items-Center</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-items-center" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Items-Baseline</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-items-baseline" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Items-Stretch</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap align-items-stretch" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+        <div class="py-2 px-5 m-3 bg-warning">Flex item</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Flex Align-Self</div>
+    <div class="p-3">
+      <div class="d-flex flex-wrap" style="height: 300px">
+        <div class="py-2 px-5 m-3 bg-warning align-self-start">Start</div>
+        <div class="py-2 px-5 m-3 bg-warning align-self-center">Center</div>
+        <div class="py-2 px-5 m-3 bg-warning align-self-end">End</div>
+        <div class="py-2 px-5 m-3 bg-warning align-self-baseline">Baseline</div>
+        <div class="py-2 px-5 m-3 bg-warning align-self-stretch">Stretch</div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Icons</div>
+    <div class="p-3">
+      <i class="fas fa-cloud"></i>
+      <i class="fas fa-coffee"></i>
+      <i class="fas fa-car"></i>
+      <i class="fas fa-file"></i>
+      <i class="fab fa-app-store-ios"></i>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Media Objects</div>
+    <div class="p-3">
+      <div class="media border p-3 w-100 h-auto">
+        <img
+          src="./img1.png"
+          alt="John Doe"
+          class="mr-3 mt-3 rounded-circle"
+          width="25"
+        />
+        <div class="media-body">
+          <h4>John Doe</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            hic eius, laboriosam accusantium consequuntur ipsum natus, unde
+            magni sint officiis assumenda voluptas, incidunt saepe quidem sequi
+            cum numquam dolore doloremque!
+          </p>
+          <div class="media p-3">
+            <img
+              src="./img2.png"
+              alt="Jane Doe"
+              class="mr-3 mt-3 rounded-circle"
+              width="25"
+            />
+            <div class="media-body">
+              <h4>Jane Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorem minima magnam id quisquam atque nobis voluptatum,
+                accusantium debitis qui culpa autem corrupti quasi commodi eaque
+                explicabo exercitationem nulla sunt ex?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h5 bg-dark text-light p-2">Filter</div>
+    <div class="p-3">
+      <input
+        class="form-control"
+        id="myInput"
+        type="text"
+        placeholder="Search"
+      />
+      <br />
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@mail.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@greatstuff.com</td>
+          </tr>
+          <tr>
+            <td>Anja</td>
+            <td>Ravendale</td>
+            <td>a_r@test.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="myDIV" class="mt-3">
+        <p>I am a paragraph.</p>
+        <div>I am a div element inside div.</div>
+        <button class="btn">button</button>
+        <button class="btn btn-info">button2</button>
+        <p>Another paragraph.</p>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".toast").toast("show");
+      });
+
+      $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+          $("#myDIV *").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

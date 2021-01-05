@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-25</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+      integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .container {
+        width: 50%;
+        text-align: center;
+        margin: 20px auto;
+        padding: 15px;
+        border: 1px solid rgb(156, 156, 156);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Bar Chart</h3>
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="container">
+      <h3>Line Chart</h3>
+      <canvas id="line-chart"></canvas>
+    </div>
+
+    <div class="container">
+      <h3>Radar Chart</h3>
+      <canvas id="radar-chart"></canvas>
+    </div>
+
+    <div class="container">
+      <h3>Pie Chart</h3>
+      <canvas id="pie-chart"></canvas>
+    </div>
+
+    <div class="container">
+        <h3>Doughnut Chart</h3>
+        <canvas id="doughnut-chart"></canvas>
+      </div>
+
+      <div class="container">
+        <h3>Polar-Area Chart</h3>
+        <canvas id="polarArea-chart"></canvas>
+      </div>
+
+    <script src="./chart-scipts/bar.js"></script>
+    <script src="./chart-scipts/line.js"></script>
+    <script src="./chart-scipts/radar.js"></script>
+    <script src="./chart-scipts/pie.js"></script>
+    <script src="./chart-scipts/doughnut.js"></script>
+    <script src="./chart-scipts/polarArea.js"></script>
+  </body>
+</html>

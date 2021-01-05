@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-25</title>
+
+    <link rel="stylesheet" href="./rangeslider.js-2.3.0/rangeslider.css" />
+    <style>
+      .holder {
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+        padding: 25px 5px;
+        text-align: center;
+      }
+      .output {
+        text-align: center;
+      }
+      @media screen and (max-width: 600px) {
+        .holder {
+          width: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>Range Slider Horizontal</div>
+    <div class="holder">
+      <input
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        value="30"
+        data-orientation="horizontal"
+        data-rangeslider
+        id="range"
+      />
+      <h3 class="output" id="range-op"></h3>
+    </div>
+
+    <div>Range Slider with Negative attributes</div>
+    <div class="holder">
+      <input
+        type="range"
+        min="-100"
+        max="0"
+        step="1"
+        value="-20"
+        data-orientation="horizontal"
+        data-rangeslider
+        id="negative"
+      />
+      <h3 class="output" id="negative-op"></h3>
+    </div>
+
+
+    <div>Range Slider with Floating Points</div>
+    <div class="holder">
+      <input
+        type="range"
+        min="0"
+        max="10"
+        step="0.1"
+        value="2.5"
+        data-orientation="horizontal"
+        data-rangeslider
+        id="floating"
+      />
+      <h3 class="output" id="floating-op"></h3>
+    </div>
+
+    <div>Programatically changing value</div>
+    <div class="holder">
+      <input
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        value=""
+        data-orientation="horizontal"
+        data-rangeslider
+        id="change"
+      />
+      <h3 class="output" id="change-op"></h3>
+      <div>
+          Change value here : <input type="number" min="0" max="100" value="25" id="change-inp" />
+      </div>
+    </div>
+
+    <div>Range Slider Vertical</div>
+    <div class="holder">
+      <input
+        type="range"
+        min="0"
+        max="10"
+        step="1"
+        value="3"
+        data-orientation="vertical"
+        data-rangeslider
+        id="vertical"
+      />
+      <h3 class="output" id="vertical-op"></h3>
+    </div>
+
+    <div>Programatically changing Attributes</div>
+    <div class="holder">
+      <input
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        value=""
+        data-orientation="horizontal"
+        data-rangeslider
+        id="attr"
+      />
+      <h3 class="output" id="attr-op"></h3>
+      <div>
+          Change min value here : <input type="number" id="attr-min" /> <br/><br/>
+          Change max value here : <input type="number" id="attr-max" /> <br/><br/>
+          <button id="attr-btn">Change</button>
+      </div>
+    </div>
+
+    <script src="./rangeslider.js-2.3.0/jquery.min.js"></script>
+    <script src="./rangeslider.js-2.3.0/rangeslider.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#range").rangeslider({
+          polyfill: false,
+          onInit: function () {
+            $("#range-op").html(this.$element.val());
+          },
+          onSlide: function (position, value) {
+            $("#range-op").html(this.$element.val());
+          },
+        });
+
+        $("#negative").rangeslider({
+          polyfill: false,
+          onInit: function () {
+            $("#negative-op").html(this.$element.val());
+          },
+          onSlide: function (position, value) {
+            $("#negative-op").html(this.$element.val());
+          },
+        });
+
+        $("#floating").rangeslider({
+          polyfill: false,
+          onInit: function () {
+            $("#floating-op").html(this.$element.val());
+          },
+          onSlide: function (position, value) {
+            $("#floating-op").html(this.$element.val());
+          },
+        });
+
+        $("#change").rangeslider({
+          polyfill: false,
+          onInit: function () {
+            $("#change-op").html(this.$element.val());
+            $("#change-inp").val(this.$element.val());
+          },
+          onSlide: function (position, value) {
+            $("#change-op").html(this.$element.val());
+            $("#change-inp").val(this.$element.val());
+          },
+        });
+
+        $('#change-inp').change(function(){
+            var value = $('#change-inp').val();
+            var range = $("#change")[0]
+            $("#change").val(value).change();
+        })
+
+        $("#vertical").rangeslider({
+          polyfill: false,
+          onInit: function () {
+            $("#vertical-op").html(this.$element.val());
+          },
+          onSlide: function (position, value) {
+            $("#vertical-op").html(this.$element.val());
+          },
+        });
+
+
+        $("#attr").rangeslider({
+          polyfill: false,
+          onInit: function () {
+            $("#attr-op").html(this.$element.val());
+          },
+          onSlide: function (position, value) {
+            $("#attr-op").html(this.$element.val());
+          },
+        });
+
+
+        $('#attr-btn').click(function(){
+            var min = $('#attr-min').val();
+            var max = $('#attr-max').val();
+            var range = $("#attr")[0]
+            $("#attr").attr({
+                min,
+                max
+            }).rangeslider('update',true);
+        })
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY-23</title>
+
+    <link rel="stylesheet" href="./jqui/jquery-ui.css" />
+    <script src="./jqui/external/jquery/jquery.js"></script>
+    <script src="./jqui/jquery-ui.js"></script>
+  </head>
+  <body>
+    <h3>Normal Date input</h3>
+    <div>Date: <input type="text" id="datepicker" /></div>
+
+    <h3>Show Inline</h3>
+    Date: <div id="date-in"></div>
+
+    <h3>Animation</h3>
+    <p>Date: <input type="text" id="anim" size="30" /></p>
+
+    <h3>With Button</h3>
+    <p>Date: <input type="text" id="button" /></p>
+
+    <h3>With Months & Years</h3>
+    <p>Date: <input type="text" id="months-years" /></p>
+
+    <h3>With Multiple Months</h3>
+    <p>Date: <input type="text" id="multi-months" /></p>
+
+    <h3>With Date Format</h3>
+    <p>Date: <input type="text" id="date-format" /></p>
+
+    <h3>With Date Range</h3>
+    <p>Date: <input type="text" id="date-range" /></p>
+
+    <h3>Show Week</h3>
+    <p>Date: <input type="text" id="show-week" /></p>
+
+    <h3>Range Selection</h3>
+    <label for="from">From</label>
+    <input type="text" id="from" name="from" />
+    <label for="to">to</label>
+    <input type="text" id="to" name="to" />
+
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+
+        $("#date-in").datepicker();
+
+        $("#anim").datepicker({
+          showAnim: "drop",
+        });
+
+        $("#button").datepicker({
+          showButtonPanel: true,
+        });
+
+        $("#months-years").datepicker({
+          changeMonth: true,
+          changeYear: true,
+        });
+
+        $("#multi-months").datepicker({
+          numberOfMonths: 3,
+          showButtonPanel: true,
+        });
+
+        $("#date-format").datepicker({
+          dateFormat: "d M ,y",
+        });
+
+        $("#date-range").datepicker({ minDate: -10, maxDate: "+1M" });
+
+        $("#show-week").datepicker({
+          showWeek: true,
+          firstDay: 1,
+        });
+
+        var dateFormat = "mm/dd/yy",
+          from = $("#from")
+            .datepicker({
+              defaultDate: "+1w",
+              changeMonth: true,
+              numberOfMonths: 3,
+            })
+            .on("change", function () {
+              to.datepicker("option", "minDate", getDate(this));
+            }),
+          to = $("#to")
+            .datepicker({
+              defaultDate: "+1w",
+              changeMonth: true,
+              numberOfMonths: 3,
+            })
+            .on("change", function () {
+              from.datepicker("option", "maxDate", getDate(this));
+            });
+
+        function getDate(element) {
+          var date;
+          try {
+            date = $.datepicker.parseDate(dateFormat, element.value);
+          } catch (error) {
+            date = null;
+          }
+
+          return date;
+        }
+      });
+    </script>
+  </body>
+</html>
